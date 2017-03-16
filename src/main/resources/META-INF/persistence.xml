@@ -8,7 +8,9 @@
     <persistence-unit name="persistence-unit" transaction-type="RESOURCE_LOCAL">
         <provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
         <class>com.rpicloud.models.Pie</class>
-        <!--<class>com.openjpa.example.entity.Manager</class>-->
+        <class>com.rpicloud.models.Employee</class>
+        <class>com.rpicloud.models.Student</class>
+        <class>com.rpicloud.models.CarHireEvent</class>
         <properties>
             <property name="openjpa.Log" value="DefaultLevel=WARN, Tool=INFO, SQL=TRACE" />
             <property name="openjpa.jdbc.MappingDefaults" value="IndexLogicalForeignKeys=false,IndexDiscriminator=false"/>

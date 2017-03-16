@@ -28,7 +28,7 @@ public class SpringBootRestExampleApplication extends JpaBaseConfiguration{
 		SpringApplication.run(SpringBootRestExampleApplication.class, args);
 	}
 
-	@Bean
+/*	@Bean
 	public CommandLineRunner initializeDb(PieRepository repository) {
 		return (args) -> {
 			repository.deleteAll();
@@ -37,7 +37,7 @@ public class SpringBootRestExampleApplication extends JpaBaseConfiguration{
 				repository.save(new Pie(faker.lorem().word(), faker.lorem().sentence(), i ));
 			}
 		};
-	}
+	}*/
 
 	protected SpringBootRestExampleApplication(DataSource dataSource, JpaProperties properties, ObjectProvider<JtaTransactionManager> jtaTransactionManager, ObjectProvider<TransactionManagerCustomizers> transactionManagerCustomizers) {
 		super(dataSource, properties, jtaTransactionManager, transactionManagerCustomizers);
